@@ -33,4 +33,4 @@ public class test {
 		
 	}
 }
-
+// 접근 지정자에서 public > protected > 디폴트(같은 패키지) > private
