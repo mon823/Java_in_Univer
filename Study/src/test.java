@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 
 public class test {
@@ -34,3 +33,8 @@ public class test {
 	}
 }
 // 접근 지정자에서 public > protected > 디폴트(같은 패키지) > private
+// ex) class D extends B(상속관계)
+// static 멤버와 no-static 멤버
+// static는 클래스당 하나만 생성됨 == 클래스 멤버라고도 부름
+// static은 함수가 끝나도 값이 안사라짐 == 전역변수와 비슷함
+// 객체 없이 사용 가능
