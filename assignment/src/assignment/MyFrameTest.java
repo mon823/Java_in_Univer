@@ -40,6 +40,7 @@ class MyFrame extends JFrame implements ActionListener{
 	JLabel label_1 = new JLabel("수식 입력 ");
 	JLabel label_2 = new JLabel("계산 결과");
 	
+	
 	JPanel jpn_1 = new JPanel(); 
 	JPanel jpn_2 = new JPanel(); 
 	JPanel jpn_3 = new JPanel();
@@ -50,7 +51,7 @@ class MyFrame extends JFrame implements ActionListener{
 	public MyFrame(){
         setSize(400, 400);//프레임 크기 설정
         setTitle("계산기 프레임");//창 제목설정
-        jpn_2.setLayout(new GridLayout(4,4));
+        jpn_2.setLayout(new GridLayout(4,4,5,5));
         
         button_Add.setBackground(new Color(0,255,255));
         button_Sub.setBackground(new Color(0,255,255));
@@ -59,6 +60,7 @@ class MyFrame extends JFrame implements ActionListener{
         
 		jpn_1.setBackground(new Color(204,204,204));
 		jpn_3.setBackground(new Color(255,255,0));
+		jpn_2.setBackground(new Color(255,255,255));
         //setLayout(new FlowLayout());//기본설정BoderLayout 에서 FlowLayout으로 변경
         jpn_1.add(label_1);
         jpn_1.add(text_1);
@@ -66,6 +68,7 @@ class MyFrame extends JFrame implements ActionListener{
         
         jpn_2.add(buttonStart_0);
         buttonStart_0.addActionListener(this);
+        buttonStart_0.getInsets();
         jpn_2.add(buttonStart_1);
         buttonStart_0.addActionListener(this);
         jpn_2.add(buttonStart_2);
@@ -107,21 +110,27 @@ class MyFrame extends JFrame implements ActionListener{
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
         
-        @Override
-    	public void actionPerformed(ActionEvent e)
-    	{
-    		//액션 리스너 재정의
-    		if (e.getSource().equals(buttonStart_0))
-    		{
-    			text_1.
-    		}
-    		else
-    		{
-    			JOptionPane.showMessageDialog(this, "2번 버튼 눌렀네");
-    		}
-    	}
+//        @Override
+//    	public void actionPerformed(ActionEvent e)
+//    	{
+//    		//액션 리스너 재정의
+//    		if (e.getSource().equals(buttonStart_0))
+//    		{
+//    			text_1.
+//    		}
+//    		else
+//    		{
+//    			JOptionPane.showMessageDialog(this, "2번 버튼 눌렀네");
+//    		}
+//    	}
  
     }
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 public class MyFrameTest {
     public static void main(String[] args) {
